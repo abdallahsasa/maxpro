@@ -35,9 +35,9 @@ class DatabaseSeeder extends Seeder
         Page::create([
             'identifier' => 'about',
             'title' => [
-                'fr' => 'À Propos de MAX PRO SOLS',
+                'fr' => 'À propos de MAX PRO SOLS',
                 'en' => 'About MAX PRO SOLS',
-                'ar' => 'عن ماكس برو للأرضيات',
+                'ar' => 'عن ماكس برو (MAX PRO SOLS)',
             ],
             'slug' => [
                 'fr' => 'a-propos',
@@ -45,9 +45,9 @@ class DatabaseSeeder extends Seeder
                 'ar' => 'about',
             ],
             'content' => [
-                'fr' => '<p>MAX PRO SOLS est une entreprise de référence en revêtements de sols et de murs haut de gamme au service des professionnels du bâtiment, promoteurs et architectes à Paris et en Île-de-France depuis plus de 15 ans. Nous allions rigueur technique (normes DTU, PV de classement), maîtrise des matériaux innovants et respect absolu des délais.</p>',
-                'en' => '<p>MAX PRO SOLS is a premier commercial flooring and wall covering contractor serving main contractors, property developers, and architects across Paris and Île-de-France for over 15 years. We combine technical excellence (French DTU standards), advanced materials, and strict schedule adherence.</p>',
-                'ar' => '<p>ماكس برو للأرضيات والجدران هي الشركة الرائدة في حلول الأرضيات والتكسيات الجدارية المتميزة للمشاريع الكبرى والمهندسين المعماريين في باريس ومنطقة إيل دو فرانس لأكثر من 15 عاماً.</p>',
+                'fr' => '<p class="lead font-semibold text-slate-900 text-xl mb-6">Notre savoir-faire au service de vos projets</p><p>MAX PRO SOLS est une entreprise francilienne spécialisée dans la réalisation de travaux de revêtements de sols et murs pour les professionnels du bâtiment, maîtres d’ouvrage, promoteurs, architectes et entreprises générales.</p><p>Nous intervenons à Paris et en Île-de-France sur des projets de construction neuve, de rénovation et d’aménagement.</p><p>Notre savoir-faire couvre notamment le carrelage et la faïence, le parquet, les sols souples, les revêtements en résine, les chapes, le ragréage ainsi que la préparation des supports.</p><p>De l’étude du dossier à la réception des travaux, nos équipes assurent un suivi rigoureux du chantier avec une attention particulière portée à la qualité d’exécution, au respect des prescriptions techniques et aux délais.</p>',
+                'en' => '<p class="lead font-semibold text-slate-900 text-xl mb-6">Our expertise at the service of your projects</p><p>MAX PRO SOLS is a Paris region specialist company in floor and wall coverings for building professionals, project owners, developers, architects, and general contractors.</p><p>We operate across Paris and Île-de-France on new construction, renovation, and fit-out projects.</p><p>Our expertise notably covers tiling and earthenware, parquet flooring, resilient flooring, resin coatings, screeds, leveling compounds, and substrate preparation.</p><p>From initial dossier study to final handover, our teams ensure rigorous site supervision with dedicated attention to execution quality, compliance with technical specifications, and strict schedule adherence.</p>',
+                'ar' => '<p class="lead font-semibold text-slate-900 text-xl mb-6">خبرتنا في خدمة مشاريعكم</p><p>ماكس برو (MAX PRO SOLS) هي شركة متخصصة في منطقة باريس وإيل دو فرانس في تنفيذ أعمال وتكسيات الأرضيات والجدران لمحترفي البناء، وأصحاب المشاريع، والمطورين العقاريين، والمهندسين المعماريين، وشركات المقاولات العامة.</p><p>نعمل في باريس وكافة مدن إيل دو فرانس على مشاريع البناء الجديد، والتجديد، وإعادة التهيئة والتأهيل.</p><p>تغطي خبراتنا المتميزة أعمال السيراميك والبورسلين، الباركيه والأرضيات الخشبية، الأرضيات المرنة، أرضيات الراتنج والإيبوكسي، اللياسة والصبات، التسوية الذاتية، بالإضافة إلى الإعداد الشامل للأسطح والأساسات.</p><p>من دراسة الملف الفني حتى تسليم المشروع النهائي، تحرص فرقنا على المتابعة الميدانية الدقيقة مع اهتمام فائق بجودة التنفيذ والالتزام الصارم بالمواصفات الهندسية والمواعيد المحددة.</p>',
             ],
             'is_published' => true,
         ]);
@@ -56,55 +56,68 @@ class DatabaseSeeder extends Seeder
         $commitmentsData = [
             [
                 'title' => [
-                    'fr' => 'Rigueur Technique & Normes DTU',
-                    'en' => 'Technical Rigor & French DTU Standards',
-                    'ar' => 'المعايير الفنية والجودة الصارمة',
+                    'fr' => 'Qualité d’exécution',
+                    'en' => 'Execution Quality',
+                    'ar' => 'جودة التنفيذ والتشطيب',
                 ],
                 'description' => [
-                    'fr' => 'Application scrupuleuse des règles professionnelles, tests d’humidité, préparation soignée des supports et traçabilité des matériaux.',
-                    'en' => 'Strict adherence to professional trade standards, moisture testing, substrate preparation, and certified material traceability.',
-                    'ar' => 'الالتزام التام بالمواصفات القياسية، فحص الرطوبة وإعداد الأساسات بأعلى دقة.',
+                    'fr' => 'Une attention particulière portée à la préparation des supports, à la mise en œuvre et aux finitions.',
+                    'en' => 'Meticulous attention paid to substrate preparation, installation, and final finishing.',
+                    'ar' => 'اهتمام دقيق وخاص بإعداد الأسطح والأساسات، والتنفيذ الفني المتقن والتشطيبات النهائية.',
                 ],
                 'order_column' => 1,
             ],
             [
                 'title' => [
-                    'fr' => 'Respect Strict des Délais de Chantier',
-                    'en' => 'Strict Adherence to Project Schedules',
+                    'fr' => 'Respect des délais',
+                    'en' => 'Schedule Adherence',
                     'ar' => 'الالتزام الصارم بالمواعيد',
                 ],
                 'description' => [
-                    'fr' => 'Capacité de mobilisation rapide de nos équipes qualifiées pour garantir la livraison de vos chantiers tertiaires et industriels dans les temps.',
-                    'en' => 'Rapid deployment of certified installation teams to ensure on-time handover for all commercial and industrial sites.',
-                    'ar' => 'قدرة عالية على حشد فرق العمل لضمان تسليم المشاريع في المواعيد المحددة.',
+                    'fr' => 'Organisation et mobilisation de nos équipes en fonction des contraintes et du planning de chaque chantier.',
+                    'en' => 'Organization and mobilization of our teams according to the constraints and timeline of each project.',
+                    'ar' => 'تنظيم وحشد فرق العمل الميدانية بما يتوافق مع متطلبات وجدول كل مشروع.',
                 ],
                 'order_column' => 2,
             ],
             [
                 'title' => [
-                    'fr' => 'Garantie Décennale & Partenaires Agréés',
-                    'en' => '10-Year Warranty & Certified Partners',
-                    'ar' => 'ضمان لمدة 10 سنوات وشركاء معتمدون',
+                    'fr' => 'Maîtrise technique',
+                    'en' => 'Technical Mastery',
+                    'ar' => 'الإتقان والمعايير الفنية',
                 ],
                 'description' => [
-                    'fr' => 'Tous nos ouvrages sont couverts par une assurance décennale française. Nous travaillons en étroite collaboration avec les plus grands fabricants européens.',
-                    'en' => 'All installations are fully covered by French 10-year structural warranty, working in direct partnership with leading European manufacturers.',
-                    'ar' => 'جميع الأعمال مشمولة بالتأمين العشري الفرنسي مع أفضل المصنعين الأوروبيين.',
+                    'fr' => 'Mise en œuvre des revêtements conformément aux prescriptions techniques applicables et aux recommandations des fabricants.',
+                    'en' => 'Installation of coverings in strict accordance with applicable technical standards and manufacturers’ recommendations.',
+                    'ar' => 'تنفيذ التكسيات والأرضيات وفقاً للمواصفات الفنية المعتمدة وتوصيات المصنّعين العالمية.',
                 ],
                 'order_column' => 3,
             ],
             [
                 'title' => [
-                    'fr' => 'Accompagnement B2B & Interlocuteur Dédié',
-                    'en' => 'Dedicated B2B Project Management',
-                    'ar' => 'إدارة مشاريع مخصصة لقطاع الأعمال',
+                    'fr' => 'Suivi de chantier',
+                    'en' => 'Dedicated Site Supervision',
+                    'ar' => 'المتابعة والإشراف المستمر',
                 ],
                 'description' => [
-                    'fr' => 'Un conducteur de travaux dédié vous accompagne de l’étude technique initiale au procès-verbal de réception sans réserve.',
-                    'en' => 'A dedicated site supervisor assists you from initial feasibility studies through to zero-snag handover.',
-                    'ar' => 'مدير مشروع مخصص يرافقكم من الدراسة الفنية حتى التسليم النهائي للمشروع.',
+                    'fr' => 'Un interlocuteur dédié pour assurer le suivi du projet, de l’étude jusqu’à la réception des travaux.',
+                    'en' => 'A dedicated contact person to oversee the project, from initial planning to work handover.',
+                    'ar' => 'مسؤول مشروع مخصص يرافقكم في كافة المراحل من دراسة المخططات حتى الاستلام النهائي.',
                 ],
                 'order_column' => 4,
+            ],
+            [
+                'title' => [
+                    'fr' => 'Garantie décennale',
+                    'en' => '10-Year Decennial Warranty',
+                    'ar' => 'الضمان العشري (10 سنوات)',
+                ],
+                'description' => [
+                    'fr' => 'Nos travaux sont couverts par une assurance responsabilité civile et décennale adaptée à nos activités.',
+                    'en' => 'Our works are covered by civil liability and decennial insurance tailored to our activities.',
+                    'ar' => 'أعمالنا مشمولة بالتأمين ضد المسؤولية المدنية والتأمين العشري المعتمد لجميع أنشطتنا.',
+                ],
+                'order_column' => 5,
             ],
         ];
 
@@ -214,43 +227,53 @@ class DatabaseSeeder extends Seeder
             'is_published' => true,
         ]);
 
-        // 5. Services
+        // 5. Services (الاختصاصات)
         $service1 = Service::create([
             'title' => [
-                'fr' => 'Résines Industrielles & Époxy',
-                'en' => 'Industrial Epoxy & Polyurethane Resin',
-                'ar' => 'أرضيات الراتنج الصناعي والإيبوكسي',
+                'fr' => 'Carrelage & Faïence',
+                'en' => 'Tiling & Earthenware',
+                'ar' => 'السيراميك والبورسلين والتكسيات الجدارية',
             ],
             'slug' => [
-                'fr' => 'resines-industrielles-epoxy',
-                'en' => 'industrial-epoxy-resin',
-                'ar' => 'industrial-epoxy-resin',
+                'fr' => 'carrelage-faience',
+                'en' => 'tiling-earthenware',
+                'ar' => 'carrelage-faience',
             ],
             'overview' => [
-                'fr' => '<p>Revêtements coulés sans joints, haute performance mécanique et chimique, classement UPEC élevé pour entrepôts, parkings, showrooms et laboratoires.</p>',
-                'en' => '<p>Seamless cast floor systems with high mechanical and chemical performance, ideal for warehouses, parking decks, showrooms, and tech facilities.</p>',
-                'ar' => '<p>أرضيات سائلة بدون فواصل ذات مقاومة استثنائية للأوزان والمواد الكيميائية للمستودعات ومواقف السيارات والصالات.</p>',
+                'fr' => '<p>Pose de carrelage et faïence, grands formats, grès cérame et revêtements muraux pour projets résidentiels, tertiaires et commerciaux.</p>',
+                'en' => '<p>Installation of tiles and earthenware, large formats, porcelain stoneware, and wall coverings for residential, commercial, and tertiary projects.</p>',
+                'ar' => '<p>تركيب السيراميك والبورسلين والقياسات الكبيرة، والجرانيت والتكسيات الجدارية للمشاريع السكنية والإدارية والتجارية.</p>',
             ],
-            'image' => 'images/service_resin.jpg',
+            'solutions' => [
+                'fr' => '<p>Grands formats jusqu’à 120x240cm, grès cérame pleine masse, faïence décorative, étanchéité sous carrelage (SPEC), mortiers-colles déformables C2S1/C2S2.</p>',
+                'en' => '<p>Large formats up to 120x240cm, full-body porcelain stoneware, decorative tiles, waterproofing systems under tiles, high-performance C2S1/C2S2 adhesives.</p>',
+                'ar' => '<p>بلاطات كبيرة الحجم حتى 120×240 سم، بورسلين عالي المقاومة، تكسيات جدارية، أنظمة عزل الرطوبة ومواد لاصقة عالية المرونة.</p>',
+            ],
+            'image' => 'images/project_luxury_boutique.jpg',
             'order_column' => 1,
             'is_published' => true,
         ]);
 
         $service2 = Service::create([
             'title' => [
-                'fr' => 'Parquets Nobles & Pose en Point de Hongrie',
-                'en' => 'Prestige Hardwood & Chevron Parquet',
-                'ar' => 'الباركيه الفرنسي الفاخر ونقشة الشفرون',
+                'fr' => 'Parquet',
+                'en' => 'Parquet Flooring',
+                'ar' => 'الباركيه والأرضيات الخشبية',
             ],
             'slug' => [
-                'fr' => 'parquets-nobles-point-de-hongrie',
-                'en' => 'prestige-hardwood-chevron-parquet',
-                'ar' => 'prestige-hardwood-chevron-parquet',
+                'fr' => 'parquet',
+                'en' => 'parquet-flooring',
+                'ar' => 'parquet',
             ],
             'overview' => [
-                'fr' => '<p>Fourniture et pose de parquets massifs et contrecollés d’exception en chêne de France. Spécialistes des poses traditionnelles : point de Hongrie, bâton rompu et lames larges.</p>',
-                'en' => '<p>Supply and installation of premium French oak solid and engineered hardwood flooring. Specialists in chevron, herringbone, and grand plank patterns.</p>',
-                'ar' => '<p>توريد وتركيب أرقى أنواع خشب البلوط الفرنسي بأنماط الشفرون والهيرنغبون الكلاسيكية للمشاريع الراقية.</p>',
+                'fr' => '<p>Pose de parquets massifs, contrecollés et stratifiés : pose droite, bâton rompu, point de Hongrie et finitions.</p>',
+                'en' => '<p>Installation of solid, engineered, and laminate parquet: straight lay, herringbone, chevron (point de Hongrie), and high-end finishes.</p>',
+                'ar' => '<p>تركيب الباركيه الطبيعي والمصفح وشبه الطبيعي: تركيب طولي، نقشة عظم السمكة، نقطة هنغاريا والتشطيبات الفاخرة.</p>',
+            ],
+            'solutions' => [
+                'fr' => '<p>Fourniture et pose de parquets massifs et contrecollés en chêne de France. Spécialistes des calepinages complexes, ponçage traditionnel, vitrification et huilage.</p>',
+                'en' => '<p>Supply and installation of premium French oak solid and engineered hardwood flooring. Specialists in chevron, herringbone, grand plank patterns, sanding, and oiling.</p>',
+                'ar' => '<p>توريد وتركيب خشب البلوط الطبيعي والمصفح، نقشات الشفرون والتركيب الكلاسيكي، الصنفرة والتلميع والتشطيب بالزيت المقاوم.</p>',
             ],
             'image' => 'images/service_hardwood.jpg',
             'order_column' => 2,
@@ -259,43 +282,79 @@ class DatabaseSeeder extends Seeder
 
         $service3 = Service::create([
             'title' => [
-                'fr' => 'Panneaux Muraux Acoustiques & Habillages',
-                'en' => 'Acoustic Wall Panels & Architectural Cladding',
-                'ar' => 'الألواح الجدارية العازلة للصوت والتكسيات المعمارية',
+                'fr' => 'Sols Souples',
+                'en' => 'Resilient Flooring',
+                'ar' => 'الأرضيات المرنة (PVC & LVT)',
             ],
             'slug' => [
-                'fr' => 'panneaux-muraux-acoustiques',
-                'en' => 'acoustic-wall-panels-cladding',
-                'ar' => 'acoustic-wall-panels-cladding',
+                'fr' => 'sols-souples',
+                'en' => 'resilient-flooring',
+                'ar' => 'sols-souples',
             ],
             'overview' => [
-                'fr' => '<p>Solutions d’absorption acoustique design composées de tasseaux de bois véritable sur feutre absorbant. Idéal pour salles de réunion, auditoriums et halls tertiaires.</p>',
-                'en' => '<p>Architectural acoustic slatted timber panels on recycled acoustic felt. Enhances acoustic comfort and aesthetic sophistication for corporate spaces.</p>',
-                'ar' => '<p>حلول عزل صوتي متطورة بشرائح خشبية فاخرة لتوفير الهدوء والجمال في قاعات الاجتماعات والمكاتب.</p>',
+                'fr' => '<p>PVC, LVT, linoléum, moquette et solutions acoustiques adaptées aux logements, bureaux, commerces et établissements recevant du public.</p>',
+                'en' => '<p>PVC, LVT, linoleum, carpet tiles, and acoustic solutions tailored for housing, offices, retail, and public buildings (ERP).</p>',
+                'ar' => '<p>أرضيات PVC، LVT، لينوليوم، موكيت والحلول الصوتية المصممة للمباني السكنية، المكاتب، المتاجر والمرافق العامة.</p>',
             ],
-            'image' => 'images/service_acoustic.jpg',
+            'solutions' => [
+                'fr' => '<p>Dalles et lames LVT clipsables ou collées, revêtements PVC en lés thermosoudés, linoléum naturel, moquettes en dalles à haute performance acoustique.</p>',
+                'en' => '<p>Click and glued LVT planks, hot-welded sheet vinyl, natural linoleum, heavy-duty acoustic commercial carpet tiles.</p>',
+                'ar' => '<p>ألواح وبلاط LVT، أرضيات فينيل ملحومة حرارياً، لينوليوم طبيعي، وموكيت عازل للصوت للمكاتب والفنادق.</p>',
+            ],
+            'image' => 'images/service_lvt.jpg',
             'order_column' => 3,
             'is_published' => true,
         ]);
 
         $service4 = Service::create([
             'title' => [
-                'fr' => 'Sols Souples LVT & Moquettes Dalles Tertiaires',
-                'en' => 'Commercial LVT & Modular Carpet Tiles',
-                'ar' => 'الأرضيات المرنة والفينيل وبلاط الموكيت المكتبي',
+                'fr' => 'Résine',
+                'en' => 'Resin Flooring',
+                'ar' => 'أرضيات الراتنج والإيبوكسي',
             ],
             'slug' => [
-                'fr' => 'sols-souples-lvt-moquette',
-                'en' => 'commercial-lvt-carpet-tiles',
-                'ar' => 'commercial-lvt-carpet-tiles',
+                'fr' => 'resine',
+                'en' => 'resin-flooring',
+                'ar' => 'resine',
             ],
             'overview' => [
-                'fr' => '<p>Pose de dalles et lames PVC plombantes (LVT) et moquettes en dalles techniques à haute efficacité phonique pour plateaux de bureaux et espaces tertiaires à fort trafic.</p>',
-                'en' => '<p>Precision installation of loose-lay luxury vinyl tiles (LVT) and heavy commercial carpet tiles for acoustic comfort in busy open-plan offices.</p>',
-                'ar' => '<p>تركيب أرضيات الفينيل الفاخر والموكيت المكتبي المصمم لتحمل الاستخدام الشديد والعزل الصوتي.</p>',
+                'fr' => '<p>Systèmes de sols en résine époxy et polyuréthane adaptés aux contraintes techniques, esthétiques et d’exploitation.</p>',
+                'en' => '<p>Epoxy and polyurethane resin floor systems engineered for technical performance, aesthetic demands, and heavy-duty operation.</p>',
+                'ar' => '<p>أنظمة أرضيات الراتنج والإيبوكسي والبولي يوريثان المصممة لتحمل الضغوط الفنية والجمالية وظروف التشغيل القاسية.</p>',
             ],
-            'image' => 'images/service_lvt.jpg',
+            'solutions' => [
+                'fr' => '<p>Résine autolissante époxy, revêtements polyuréthane souples et confort, chapes de résine haute résistance chimique et mécanique pour parkings, usines et laboratoires.</p>',
+                'en' => '<p>Self-smoothing epoxy, comfortable polyurethane coatings, heavy chemical and mechanical resistance resin screeds for car parks, plants, and cleanrooms.</p>',
+                'ar' => '<p>إيبوكسي ذاتي التسوية، بولي يوريثان مرن وعازل، وأرضيات راتنجية للمواقف والمصانع والمختبرات الطبية.</p>',
+            ],
+            'image' => 'images/service_resin.jpg',
             'order_column' => 4,
+            'is_published' => true,
+        ]);
+
+        $service5 = Service::create([
+            'title' => [
+                'fr' => 'Chape & Ragréage',
+                'en' => 'Screed & Leveling',
+                'ar' => 'اللياسة والتسوية الذاتية',
+            ],
+            'slug' => [
+                'fr' => 'chape-ragreage',
+                'en' => 'screed-leveling',
+                'ar' => 'chape-ragreage',
+            ],
+            'overview' => [
+                'fr' => '<p>Réalisation de chapes, ragréages et travaux de remise à niveau avant pose des revêtements.</p>',
+                'en' => '<p>Execution of screeds, self-leveling compounds, and surface leveling prior to coverings installation.</p>',
+                'ar' => '<p>تنفيذ الصبات واللياسة والتسوية الذاتية ومعالجة وتسوية الأسطح قبل تركيب التكسيات والأرضيات.</p>',
+            ],
+            'solutions' => [
+                'fr' => '<p>Chapes fluides ciment et anhydrite, ragréages autonivelants fibrés classement P3/P4, ponçage mécanique, fraisage et préparation minutieuse des supports.</p>',
+                'en' => '<p>Cementitious and anhydrite fluid screeds, fiber-reinforced self-leveling P3/P4, mechanical sanding, scarifying, and meticulous substrate preparation.</p>',
+                'ar' => '<p>صبات سائلة إسمنتية ومائية، تسوية ذاتية مدعمة بالألياف، صنفرة ميكانيكية وإعداد هندسي فائق للأساسات.</p>',
+            ],
+            'image' => 'images/project_logistics.jpg',
+            'order_column' => 5,
             'is_published' => true,
         ]);
 
@@ -331,7 +390,7 @@ class DatabaseSeeder extends Seeder
                 'ar' => '<p>تطبيق شامل لنظام إيبوكسي ذاتي التسوية لتحمل حركة الرافعات الشوكية مع خطوط مسارات السلامة المدمجة.</p>',
             ],
         ]);
-        $proj1->services()->attach([$service1->id]);
+        $proj1->services()->attach([$service4->id, $service5->id]);
 
         $proj2 = Project::create([
             'sector_id' => $sector3->id,

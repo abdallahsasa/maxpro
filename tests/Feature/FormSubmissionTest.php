@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Tests\TestCase;
@@ -25,7 +24,7 @@ class FormSubmissionTest extends TestCase
 
         $response->assertSessionHas('success');
         $response->assertRedirect();
-        
+
         $this->assertDatabaseHas('contact_requests', [
             'email' => 'john@example.com',
             'company' => 'Acme Corp',
@@ -35,7 +34,7 @@ class FormSubmissionTest extends TestCase
     public function test_quote_request_form_can_be_submitted_with_attachments()
     {
         Storage::fake('public');
-        
+
         $file = UploadedFile::fake()->create('document.pdf', 1000, 'application/pdf');
 
         $response = $this->post(route('quote.submit'), [

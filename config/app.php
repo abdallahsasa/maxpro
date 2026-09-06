@@ -41,6 +41,8 @@ return [
 
     'debug' => (bool) env('APP_DEBUG', false),
 
+    'coming_soon' => (bool) env('COMING_SOON_MODE', true),
+
     /*
     |--------------------------------------------------------------------------
     | Application URL

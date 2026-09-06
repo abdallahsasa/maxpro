@@ -43,6 +43,29 @@
 <body class="antialiased bg-white text-slate-800 flex flex-col min-h-screen selection:bg-red-600 selection:text-white"
     x-data="{ mobileMenuOpen: false }">
 
+    @if(config('app.coming_soon') && (auth()->check() || (class_exists(\Filament\Facades\Filament::class) && \Filament\Facades\Filament::auth()->check())))
+        <div
+            class="bg-amber-400 text-slate-950 px-4 py-2 text-xs font-semibold shadow-md flex flex-wrap items-center justify-between gap-2 border-b border-amber-500 relative z-50">
+            <div class="flex items-center gap-2">
+                <span class="flex h-2 w-2 relative">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-950 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-slate-950"></span>
+                </span>
+                <span>
+                    <strong>Mode Aperçu Administrateur :</strong> Le site public est en mode <em>« Bientôt Disponible
+                        »</em>. Seuls les administrateurs connectés peuvent naviguer sur le site.
+                </span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="{{ url('/admin') }}"
+                    class="px-3 py-1 rounded bg-slate-950 text-amber-300 hover:bg-slate-900 transition-colors text-[11px] font-bold">
+                    Tableau de bord Admin &rarr;
+                </a>
+            </div>
+        </div>
+    @endif
+
     <!-- Top B2B Bar with Direct Language Quick Links -->
     <div class="bg-slate-50 border-b border-slate-200 text-xs text-slate-600 py-2 hidden lg:block">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
@@ -59,13 +82,13 @@
                 <span class="font-medium">SIREN : 849 537 394</span>
             </div>
             <div class="flex items-center space-x-6">
-                <a href="mailto:maxprosols@gmail.com"
+                <a href="mailto:minfo@maxprosols.com"
                     class="hover:text-red-600 transition-colors flex items-center gap-1.5 font-medium">
                     <svg class="w-3.5 h-3.5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span>maxprosols@gmail.com</span>
+                    <span>info@maxprosols.com</span>
                 </a>
                 <span class="text-slate-300">|</span>
                 <span
@@ -283,31 +306,31 @@
                         <li>
                             <a href="{{ route('services.index') }}"
                                 class="text-slate-600 hover:text-red-600 font-medium transition-colors">
-                                {{ app()->getLocale() === 'fr' ? 'Résine Époxy & Polyuréthane' : (app()->getLocale() === 'ar' ? 'أرضيات الراتنج والإيبوكسي' : 'Epoxy & Polyurethane Resin') }}
+                                {{ app()->getLocale() === 'fr' ? 'Carrelage & Faïence' : (app()->getLocale() === 'ar' ? 'السيراميك والبورسلين' : 'Tiling & Earthenware') }}
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('services.index') }}"
                                 class="text-slate-600 hover:text-red-600 font-medium transition-colors">
-                                {{ app()->getLocale() === 'fr' ? 'Parquets & Point de Hongrie' : (app()->getLocale() === 'ar' ? 'الباركيه الفاخر ونقشة الشفرون' : 'Prestige Hardwood & Chevron') }}
+                                {{ app()->getLocale() === 'fr' ? 'Parquet' : (app()->getLocale() === 'ar' ? 'الباركيه والأرضيات الخشبية' : 'Parquet Flooring') }}
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('services.index') }}"
                                 class="text-slate-600 hover:text-red-600 font-medium transition-colors">
-                                {{ app()->getLocale() === 'fr' ? 'Panneaux Muraux Acoustiques' : (app()->getLocale() === 'ar' ? 'الألواح الجدارية العازلة للصوت' : 'Acoustic Wall Panels') }}
+                                {{ app()->getLocale() === 'fr' ? 'Sols Souples' : (app()->getLocale() === 'ar' ? 'الأرضيات المرنة (PVC & LVT)' : 'Resilient Flooring') }}
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('services.index') }}"
                                 class="text-slate-600 hover:text-red-600 font-medium transition-colors">
-                                {{ app()->getLocale() === 'fr' ? 'Sols Souples LVT & Moquette' : (app()->getLocale() === 'ar' ? 'الأرضيات الفينيل وبلاط الموكيت' : 'Commercial LVT & Carpet Tiles') }}
+                                {{ app()->getLocale() === 'fr' ? 'Résine' : (app()->getLocale() === 'ar' ? 'أرضيات الراتنج والإيبوكسي' : 'Resin Flooring') }}
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('services.index') }}"
                                 class="text-slate-600 hover:text-red-600 font-medium transition-colors">
-                                {{ app()->getLocale() === 'fr' ? 'Préparation des Supports' : (app()->getLocale() === 'ar' ? 'إعداد ومعالجة الأسطح' : 'Substrate Preparation') }}
+                                {{ app()->getLocale() === 'fr' ? 'Chape & Ragréage' : (app()->getLocale() === 'ar' ? 'اللياسة والتسوية الذاتية' : 'Screed & Leveling') }}
                             </a>
                         </li>
                     </ul>
@@ -377,8 +400,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <a href="mailto:maxprosols@gmail.com"
-                                class="hover:text-red-600 font-medium transition-colors">maxprosols@gmail.com</a>
+                            <a href="mailto:info@maxprosols.com"
+                                class="hover:text-red-600 font-medium transition-colors">info@maxprosols.com</a>
                         </li>
                         <li class="pt-3 text-xs text-slate-500 border-t border-slate-200/80 space-y-1">
                             <div class="font-mono">SIREN : <span class="text-slate-700 font-semibold">849 537 394</span>

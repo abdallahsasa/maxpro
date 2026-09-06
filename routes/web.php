@@ -11,7 +11,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 Route::group([
     'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath'],
+    'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'coming_soon'],
 ], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
     Route::get('/about', [PageController::class, 'about'])->name('about');

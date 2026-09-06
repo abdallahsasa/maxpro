@@ -35,7 +35,7 @@ class GenerateSitemap extends Command
                 if (str_contains($url->url, '/admin') || str_contains($url->url, '/livewire')) {
                     return null;
                 }
-                
+
                 // Add localization variants (we're crawling the default locale and letting it handle the others)
                 return $url;
             })
