@@ -32,7 +32,7 @@ class ComingSoonModeTest extends TestCase
         $response->assertStatus(200);
         $response->assertViewIs('coming-soon');
         $response->assertSee('L’Excellence des');
-        $response->assertSee('info@maxprosols.com');
+        $response->assertSee('info@maxprosols.fr');
     }
 
     public function test_guests_see_coming_soon_page_on_subpages(): void

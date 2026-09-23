@@ -139,7 +139,8 @@
             </div>
 
             <!-- Big Main Headline -->
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-950 mb-6 leading-tight">
+            <h1
+                class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-950 mb-6 leading-tight">
                 @if(app()->getLocale() === 'fr')
                     L’Excellence des <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-600 to-amber-600">Sols
@@ -158,11 +159,16 @@
             <!-- Subtitle Description -->
             <p class="text-base sm:text-xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
                 @if(app()->getLocale() === 'fr')
-                    Nous préparons l'expérience digitale pour les architectes, maîtres d'ouvrage et professionnels du bâtiment à Paris & en Île-de-France. Nos équipes opérationnelles restent 100% mobilisées pour vos projets en cours.
+                    Nous préparons l'expérience digitale pour les architectes, maîtres d'ouvrage et professionnels du
+                    bâtiment à Paris & en Île-de-France. Nos équipes opérationnelles restent 100% mobilisées pour vos
+                    projets en cours.
                 @elseif(app()->getLocale() === 'ar')
-                    نستعد لإطلاق بوابتنا الرقمية المخصصة للمهندسين المعماريين وشركات التطوير والمقاولات في باريس وإيل دو فرانس. فرقنا الميدانية تعمل بكامل طاقتها لتنفيذ مشاريعكم.
+                    نستعد لإطلاق بوابتنا الرقمية المخصصة للمهندسين المعماريين وشركات التطوير والمقاولات في باريس وإيل دو
+                    فرانس. فرقنا الميدانية تعمل بكامل طاقتها لتنفيذ مشاريعكم.
                 @else
-                    We are crafting an exceptional digital experience for architects, project managers, and general contractors across Paris and Île-de-France. Our on-site teams remain fully mobilized for your ongoing projects.
+                    We are crafting an exceptional digital experience for architects, project managers, and general
+                    contractors across Paris and Île-de-France. Our on-site teams remain fully mobilized for your ongoing
+                    projects.
                 @endif
             </p>
 
@@ -222,27 +228,30 @@
                 </button>
 
                 <!-- Direct Email -->
-                <a href="mailto:info@maxprosols.com"
+                <a href="mailto:info@maxprosols.fr"
                     class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm border border-slate-200 shadow-sm transition-all duration-300 flex items-center justify-center gap-2.5">
                     <svg class="w-5 h-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span>info@maxprosols.com</span>
+                    <span>info@maxprosols.fr</span>
                 </a>
             </div>
 
             <!-- Core Pillars: 5 Specialties (Light Clean Cards) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 text-left"
                 dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}">
-                
+
                 <!-- 01 — Carrelage & Faïence -->
-                <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-red-400 transition-all duration-300 group flex flex-col justify-between">
+                <div
+                    class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-red-400 transition-all duration-300 group flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
-                            <div class="w-9 h-9 rounded-lg bg-red-50 border border-red-100 flex items-center justify-center text-red-600 group-hover:scale-110 transition-transform">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-red-50 border border-red-100 flex items-center justify-center text-red-600 group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                                 </svg>
                             </div>
                             <span class="text-[10px] font-extrabold text-slate-400">01</span>
@@ -251,18 +260,21 @@
                             {{ app()->getLocale() === 'fr' ? 'Carrelage & Faïence' : (app()->getLocale() === 'ar' ? 'السيراميك والبورسلين' : 'Tiling & Earthenware') }}
                         </h3>
                         <p class="text-[11px] text-slate-600 leading-snug">
-                            {{ app()->getLocale() === 'fr' ? 'Grands formats, grès cérame & revêtements muraux.' : (app()->getLocale() === 'ar' ? 'قياسات كبيرة وبورسلين وتكسيات جدارية.' : 'Large formats, porcelain stoneware & wall coverings.') }}
+                            {{ app()->getLocale() === 'fr' ? 'Pose de carrelage et faïence, grands formats, grès cérame et revêtements muraux pour projets résidentiels, tertiaires et commerciaux.' : (app()->getLocale() === 'ar' ? 'تركيب السيراميك والبورسلين والقياسات الكبيرة، والجرانيت والتكسيات الجدارية للمشاريع السكنية والإدارية والتجارية.' : 'Installation of tiles and earthenware, large formats, porcelain stoneware, and wall coverings for residential, commercial, and tertiary projects.') }}
                         </p>
                     </div>
                 </div>
 
                 <!-- 02 — Parquet -->
-                <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-amber-400 transition-all duration-300 group flex flex-col justify-between">
+                <div
+                    class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-amber-400 transition-all duration-300 group flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
-                            <div class="w-9 h-9 rounded-lg bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 group-hover:scale-110 transition-transform">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                                 </svg>
                             </div>
                             <span class="text-[10px] font-extrabold text-slate-400">02</span>
@@ -271,18 +283,21 @@
                             {{ app()->getLocale() === 'fr' ? 'Parquet' : (app()->getLocale() === 'ar' ? 'الباركيه والأرضيات الخشبية' : 'Parquet Flooring') }}
                         </h3>
                         <p class="text-[11px] text-slate-600 leading-snug">
-                            {{ app()->getLocale() === 'fr' ? 'Massif, contrecollé, bâton rompu & point de Hongrie.' : (app()->getLocale() === 'ar' ? 'طبيعي ومصفح، نقشة الشفرون والهيرنغبون.' : 'Solid, engineered, chevron & herringbone patterns.') }}
+                            {{ app()->getLocale() === 'fr' ? 'Pose de parquets massifs, contrecollés et stratifiés : pose droite, bâton rompu, point de Hongrie et finitions.' : (app()->getLocale() === 'ar' ? 'تركيب الباركيه الطبيعي والمصفح وشبه الطبيعي: تركيب طولي، نقشة عظم السمكة، نقطة هنغاريا والتشطيبات الفاخرة.' : 'Installation of solid, engineered, and laminate parquet: straight lay, herringbone, chevron (point de Hongrie), and high-end finishes.') }}
                         </p>
                     </div>
                 </div>
 
                 <!-- 03 — Sols Souples -->
-                <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-400 transition-all duration-300 group flex flex-col justify-between">
+                <div
+                    class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-sky-400 transition-all duration-300 group flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
-                            <div class="w-9 h-9 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-sky-50 border border-sky-100 flex items-center justify-center text-sky-600 group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
                                 </svg>
                             </div>
                             <span class="text-[10px] font-extrabold text-slate-400">03</span>
@@ -291,38 +306,45 @@
                             {{ app()->getLocale() === 'fr' ? 'Sols Souples' : (app()->getLocale() === 'ar' ? 'الأرضيات المرنة (PVC & LVT)' : 'Resilient Flooring') }}
                         </h3>
                         <p class="text-[11px] text-slate-600 leading-snug">
-                            {{ app()->getLocale() === 'fr' ? 'PVC, LVT, linoléum, moquette & solutions acoustiques.' : (app()->getLocale() === 'ar' ? 'أرضيات PVC، LVT، موكيت وعزل صوتي.' : 'PVC, LVT, linoleum, carpet & acoustic systems.') }}
+                            {{ app()->getLocale() === 'fr' ? 'PVC, LVT, linoléum, moquette et solutions acoustiques adaptées aux logements, bureaux, commerces et établissements recevant du public.' : (app()->getLocale() === 'ar' ? 'أرضيات PVC، LVT، لينوليوم، موكيت والحلول الصوتية المصممة للمباني السكنية، المكاتب، المتاجر والمرافق العامة.' : 'PVC, LVT, linoleum, carpet tiles, and acoustic solutions tailored for housing, offices, retail, and public buildings (ERP).') }}
                         </p>
                     </div>
                 </div>
 
                 <!-- 04 — Résine -->
-                <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-emerald-400 transition-all duration-300 group flex flex-col justify-between">
+                <div
+                    class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-emerald-400 transition-all duration-300 group flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
-                            <div class="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 group-hover:scale-110 transition-transform">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                 </svg>
                             </div>
                             <span class="text-[10px] font-extrabold text-slate-400">04</span>
                         </div>
-                        <h3 class="font-bold text-xs text-slate-900 mb-1 group-hover:text-emerald-700 transition-colors">
+                        <h3
+                            class="font-bold text-xs text-slate-900 mb-1 group-hover:text-emerald-700 transition-colors">
                             {{ app()->getLocale() === 'fr' ? 'Résine' : (app()->getLocale() === 'ar' ? 'أرضيات الراتنج والإيبوكسي' : 'Resin Flooring') }}
                         </h3>
                         <p class="text-[11px] text-slate-600 leading-snug">
-                            {{ app()->getLocale() === 'fr' ? 'Systèmes époxy & polyuréthane haute résistance.' : (app()->getLocale() === 'ar' ? 'أنظمة إيبوكسي وبولي يوريثان عالية التحمل.' : 'Epoxy & polyurethane high-performance systems.') }}
+                            {{ app()->getLocale() === 'fr' ? 'Systèmes de sols en résine époxy et polyuréthane adaptés aux contraintes techniques, esthétiques et d’exploitation.' : (app()->getLocale() === 'ar' ? 'أنظمة أرضيات الراتنج والإيبوكسي والبولي يوريثان المصممة لتحمل الضغوط الفنية والجمالية وظروف التشغيل القاسية.' : 'Epoxy and polyurethane resin floor systems engineered for technical performance, aesthetic demands, and heavy-duty operation.') }}
                         </p>
                     </div>
                 </div>
 
                 <!-- 05 — Chape & Ragréage -->
-                <div class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-purple-400 transition-all duration-300 group flex flex-col justify-between">
+                <div
+                    class="p-4 rounded-xl bg-white border border-slate-200/90 shadow-sm hover:shadow-md hover:border-purple-400 transition-all duration-300 group flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-3">
-                            <div class="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 group-hover:scale-110 transition-transform">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                                 </svg>
                             </div>
                             <span class="text-[10px] font-extrabold text-slate-400">05</span>
@@ -331,7 +353,7 @@
                             {{ app()->getLocale() === 'fr' ? 'Chape & Ragréage' : (app()->getLocale() === 'ar' ? 'اللياسة والتسوية الذاتية' : 'Screed & Leveling') }}
                         </h3>
                         <p class="text-[11px] text-slate-600 leading-snug">
-                            {{ app()->getLocale() === 'fr' ? 'Chapes fluides, ragréages & remise à niveau.' : (app()->getLocale() === 'ar' ? 'صبات سائلة وتسوية ذاتية وإعداد للأسطح.' : 'Fluid screeds, leveling & surface preparation.') }}
+                            {{ app()->getLocale() === 'fr' ? 'Réalisation de chapes, ragréages et travaux de remise à niveau avant pose des revêtements.' : (app()->getLocale() === 'ar' ? 'تنفيذ الصبات واللياسة والتسوية الذاتية ومعالجة وتسوية الأسطح قبل تركيب التكسيات والأرضيات.' : 'Execution of screeds, self-leveling compounds, and surface leveling prior to coverings installation.') }}
                         </p>
                     </div>
                 </div>

@@ -51,8 +51,8 @@
                         </div>
                         <div class="ml-6">
                             <h3 class="text-xl font-bold text-gray-900 mb-2">Email</h3>
-                            <a href="mailto:info@maxprosols.com"
-                                class="text-red-600 hover:text-red-700 font-medium">info@maxprosols.com</a>
+                            <a href="mailto:info@maxprosols.fr"
+                                class="text-red-600 hover:text-red-700 font-medium">info@maxprosols.fr</a>
                         </div>
                     </div>
                 </div>

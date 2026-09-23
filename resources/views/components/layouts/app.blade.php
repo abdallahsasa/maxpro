@@ -82,13 +82,13 @@
                 <span class="font-medium">SIREN : 849 537 394</span>
             </div>
             <div class="flex items-center space-x-6">
-                <a href="mailto:minfo@maxprosols.com"
+                <a href="mailto:minfo@maxprosols.fr"
                     class="hover:text-red-600 transition-colors flex items-center gap-1.5 font-medium">
                     <svg class="w-3.5 h-3.5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    <span>info@maxprosols.com</span>
+                    <span>info@maxprosols.fr</span>
                 </a>
                 <span class="text-slate-300">|</span>
                 <span
@@ -400,8 +400,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <a href="mailto:info@maxprosols.com"
-                                class="hover:text-red-600 font-medium transition-colors">info@maxprosols.com</a>
+                            <a href="mailto:info@maxprosols.fr"
+                                class="hover:text-red-600 font-medium transition-colors">info@maxprosols.fr</a>
                         </li>
                         <li class="pt-3 text-xs text-slate-500 border-t border-slate-200/80 space-y-1">
                             <div class="font-mono">SIREN : <span class="text-slate-700 font-semibold">849 537 394</span>
